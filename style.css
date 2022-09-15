@@ -116,11 +116,12 @@ input:focus{
 }
 
 main{
-    background-color: #cfdef7;
+    background-color: #ffe4e6;
     padding: 15px 10px 15px;
     display:grid;
     gap: 15px;
     grid-template-columns: 3fr 1fr;
+    grid-auto-rows: min-content;
 }
 main > div > p{
     font-weight: bold;
@@ -145,7 +146,8 @@ main > div > p{
 .cards > div > p:first-child{
     font-weight: bold;
 }
-.announcements > div{
+.announcements > div,
+.trending > div{
     background-color: white;
     padding: 10px 15px;
     font-size: 0.8rem;
@@ -161,4 +163,19 @@ main > div > p{
 }
 .announcements > div > div:first-child{
     padding: 10px 0;
+}
+.trending > div{
+    display: grid;
+    gap:10px;
+}
+.trending p:first-of-type{
+    font-weight: bold;
+    align-self: flex-end;
+}
+.trending > div > div{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+.trending img{
+    grid-row: 1 / 3;
 }
