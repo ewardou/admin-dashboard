@@ -117,7 +117,7 @@ input:focus{
 
 main{
     background-color: #ffe4e6;
-    padding: 15px 10px 15px;
+    padding: 15px;
     display:grid;
     gap: 15px;
     grid-template-columns: 3fr 1fr;
@@ -129,6 +129,8 @@ main > div > p{
 }
 .projects{
     grid-row: 1 / 3;
+    display: grid;
+    grid-auto-rows: min-content 1fr;
 }
 .cards button{
     background-color: white;
@@ -136,6 +138,9 @@ main > div > p{
 }
 .cards button:hover{
     background-color: #f5d8dc;
+}
+.cards button:active{
+    background-color: #fb7185;
 }
 button img{
     height: 25px;
@@ -190,6 +195,9 @@ button img{
 .trending > div > div{
     display: grid;
     grid-template-columns: 50px 1fr;
+}
+.trending > div > div:hover{
+    background-color: #ffe4e6;
 }
 .trending img{
     grid-row: 1 / 3;
